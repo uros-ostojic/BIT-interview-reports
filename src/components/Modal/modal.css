@@ -1,0 +1,79 @@
+.modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-card {
+  width: 50%;
+  min-height: max-content;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.modal-card button {
+  font-size: 25px;
+  position: absolute;
+  right: -25px;
+  top: -10px;
+  border: 1px solid black;
+  border-radius: 50%;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.info-modal {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
+}
+
+.notes h4 {
+  color: rgb(182, 180, 180);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 25px;
+}
+
+.info h2 {
+  font-weight: 300;
+}
+
+.info-left {
+  margin-right: 100px;
+}
+
+.info p {
+  color: rgb(182, 180, 180);
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-card {
+    font-size: 14px;
+    width: 90%;
+    padding: 0.8rem;
+  }
+  .info-left {
+    margin: 0.5rem;
+  }
+}

@@ -1,0 +1,31 @@
+.candidate-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow-y: auto;
+  max-height: 20rem;
+}
+
+.candidate--next-prev {
+  display: flex;
+  justify-content: right;
+  margin: 2rem 0 0 0;
+}
+
+.candidate-search-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .candidate-search-container {
+    transform: scale(140%);
+    justify-content: center;
+  }
+}

@@ -1,0 +1,55 @@
+#loginPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+#loginPage > .login-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+#loginPage >.login-wrapper >  div {
+    margin: 10px 0;
+}
+
+#loginPage  input {
+    width: 250px;
+    display: block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+#loginPage  input:hover,  #loginPage  input:focus{
+    outline: unset;
+}
+
+#loginPage  button {
+    min-width: 150px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: unset;
+}
+
+#loginPage div.errorMessage{
+    cursor: pointer;
+    min-height: 30px;
+    margin: 0;
+    padding: 5px 0;
+    color: red;
+}
+
+@media only screen and (max-width: 425px) {
+    #loginPage > .login-wrapper{
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,23 @@
+.company-item {
+  border: 0.05rem solid darkslategray;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.company-item:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.company-item--selected {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .company-item {
+    font-size: 110%;
+    padding: 0.8rem;
+  }
+}

@@ -1,0 +1,115 @@
+.card {
+  width: 225px;
+  box-shadow: -1px 0px 5px -1px rgb(28, 30, 68);
+  -webkit-box-shadow: -1px 0px 5px -1px rgb(28, 30, 68);
+  -moz-box-shadow: -1px 0px 5px -1px rgb(28, 30, 68);
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.card > img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.card > p {
+  text-align: center;
+  padding: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+@media only screen and (max-width: 425px) {
+  .card {
+    width: 100%;
+    font-size: 16px;
+  }
+  .card > img {
+    width: 50%;
+  }
+}
+
+
+
+
+.singleReport {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 13px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.singleReport h2 {
+  font-weight: 300;
+}
+
+.singleReport p {
+  font-size: 15px;
+  color: rgb(59, 58, 58);
+}
+
+.companyName, .candidateName, .interviewDate,  .status {
+  border-right: 1px solid rgb(182, 180, 180);
+  width: 25%;
+  margin-left: 13px;
+}
+.interviewDate, .status {
+  width: 20%;
+}
+
+.eye {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 15%;
+}
+
+.eye > figure > img {
+  cursor: pointer;
+  width: 20px;
+}
+
+.eye > figure:nth-child(1) > img {
+  width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .singleReport {
+    padding: 10px;
+  }
+
+  .companyName, .candidateName, .interviewDate,  .status {
+    width: 40%;
+  }
+  .interviewDate, .status {
+    display: none;
+  }
+
+  .eye {
+    width: 20%;
+  }
+  }
+  .eye > figure > img {
+    width: 15px;
+  }
+
+  .eye > figure:nth-child(1) > img {
+    width: 20px;
+  }
+
+
+@media only screen and (max-width: 425px) {
+  .interviewDate, .status {
+    display: none;
+  }
+}
+
+

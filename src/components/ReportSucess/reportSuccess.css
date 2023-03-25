@@ -1,0 +1,26 @@
+.report-success-container {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.report-success-box {
+  padding: 1rem;
+}
+
+.report-success-message {
+  color: limegreen;
+}
+
+.link--back {
+  padding: 10px 30px;
+  background-color: lightgrey;
+  border: 0.1rem solid darkgrey;
+  color: black;
+  text-decoration: none;
+}

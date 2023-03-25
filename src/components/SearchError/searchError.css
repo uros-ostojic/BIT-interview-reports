@@ -1,0 +1,35 @@
+.search-error {
+  padding: 10px;
+  color: rgb(15,40,96);
+  background-color: white;
+  cursor: default;
+  border-radius: 5px;
+}
+
+.search-error--image {
+  text-align: center;
+}
+
+.search-error--image > img {
+  width: 50%;
+}
+
+.search-error > p {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .search-error--image > img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .search-error--image > img {
+    width: 30%;
+  }
+  .search-error > p {
+    font-size: 14px;
+  }
+}

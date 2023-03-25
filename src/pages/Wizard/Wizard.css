@@ -1,0 +1,24 @@
+.wizard-container {
+  display: flex;
+  padding: 2rem 10%;
+}
+
+.wizard--panel {
+  border-left: 0.1rem solid black;
+  padding: 0.5rem 0rem 0.5rem 2rem;
+  width: 100%;
+}
+
+.step-hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .wizard-container {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .wizard--panel {
+    border: none;
+    padding: 0;
+  }
+}

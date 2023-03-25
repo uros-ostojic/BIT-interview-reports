@@ -1,0 +1,11 @@
+.allReports {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .allReports {
+    padding: 10px;
+    font-size: 50%;
+  }
+}

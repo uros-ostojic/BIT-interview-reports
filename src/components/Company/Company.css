@@ -1,0 +1,30 @@
+.company-container {
+  width: 100%;
+  border: 0.05rem solid darkslategray;
+  max-height: 16rem;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.company--next-prev {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem 0 0 0;
+  padding: 0 !important;
+}
+
+.company-search-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .company-search-container {
+    padding: 0 0 1rem 0;
+    transform: scale(140%);
+    justify-content: center;
+  }
+}

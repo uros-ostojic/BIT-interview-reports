@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(50,49,77);
+    background: linear-gradient(90deg, rgba(50,49,77,1) 0%, rgba(150,135,212,1) 60%, rgba(136,164,235,1) 98%);
+    background-attachment: fixed;
+}
+
+figure{
+    line-height: 0;
+}
+
+*:has(nav.show){
+    height: 100%;
+    overflow-y: hidden;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+
+@media screen  and (min-width: 1000px){
+    main{
+        width: 1000px;
+    }
+}
+
+#loginPage, #detailPage, .homePage, #errorPage, .allReports, .wizard-container {
+    min-height: calc(100vh - 100px);
+    position: relative;
+}
+
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}

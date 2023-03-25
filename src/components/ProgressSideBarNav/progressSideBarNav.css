@@ -1,0 +1,31 @@
+.progress--side-bar {
+  padding-right: 2rem;
+  min-width: 28%;
+  cursor: default;
+}
+
+.progress--steps {
+  margin-bottom: 2rem;
+}
+
+.progress--completed {
+  border-top: 0.1rem solid black;
+  padding: 1rem 0;
+}
+
+.progress--detail-title {
+  color: #000;
+  font-size: 70%;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.progress--detail {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .progress--side-bar {
+    display: none;
+  }
+}

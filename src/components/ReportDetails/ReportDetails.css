@@ -1,0 +1,70 @@
+.report-input-fields {
+  display: flex;
+  flex-direction: row;
+}
+
+.report-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0.5rem;
+}
+
+.report-input-label {
+  color: black;
+  margin: 0.5rem 0;
+  font-size: 80%;
+}
+
+.report-input-comment {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+select,
+input {
+  background-color: #fff;
+  border: 0.1rem solid lightgrey;
+  padding: 0.05rem;
+  border-radius: 10pxrem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+}
+
+.report-textarea {
+  height: 5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.company--next-prev {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.report-input-warning {
+  color: darkred;
+}
+.report-input-warning-shadow {
+  box-shadow: 0 0 0.5rem 0.1rem darkred;
+}
+
+@media only screen and (max-width: 768px) {
+  .report-input-fields {
+    flex-direction: column;
+  }
+  .report-input-container {
+    width: 100%;
+  }
+  .report-input-container > input {
+    padding: 0.5rem;
+  }
+  .report-input-container > select {
+    padding: 0.5rem;
+  }
+  .report-textarea {
+    width: 105%;
+  }
+}

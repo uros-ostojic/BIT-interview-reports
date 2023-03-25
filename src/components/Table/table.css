@@ -1,0 +1,50 @@
+#candidateReports{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 25px;
+}
+
+#candidateReports tr{
+    box-shadow: unset;
+    overflow: hidden;
+    
+}
+
+#candidateReports tr td{
+    border: solid transparent;
+    border-width: 1px 0 1px 0;
+    white-space: nowrap;
+}
+
+#candidateReports tr td:first-child {
+    border-width: 1px 0 1px 1px;
+    border-color: transparent;
+    border-left-style: solid;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+
+#candidateReports tr td:last-child {
+    border-color: transparent;
+    border-right-style: solid;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px;
+    border-width: 1px 1px 1px 0;
+    text-align: end;
+}
+
+#candidateReports th, #candidateReports td {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#candidateReports img {
+    cursor: pointer;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(182deg) brightness(103%) contrast(101%);
+}
+
+@media screen and (max-width: 600px) {
+    table tr td:nth-child(2), table tr td:nth-child(3) {
+        display: none;
+    }
+}

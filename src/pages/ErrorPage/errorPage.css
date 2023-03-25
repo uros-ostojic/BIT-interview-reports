@@ -1,0 +1,33 @@
+#errorPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+#errorPage   div {
+    width: max-content;
+    padding: 60px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#errorPage h3 {
+    margin: 20px 0 30px 0;
+}
+#errorPage  div > :last-child {
+    padding: 10px 30px;
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    background: -webkit-linear-gradient(43deg, #FFCC70 0%, #C850C0 46%, #4158D0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#errorPage.notLogged{
+    min-height: 100vh;
+}
